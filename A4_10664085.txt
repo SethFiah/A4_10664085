@@ -1,0 +1,25 @@
+#include <iostram>
+using namespace std;
+
+int gcd(int x, int y)
+	{
+		if((x>=y) && (x%y))
+			return (y);
+		else
+			gcd(y, (x%y));
+	}
+
+int main()
+{
+	int n,m,result;
+	cout<<"Input the first integer number;
+	cin>> x;
+	cout>>"Input the second integer number;
+	cin>> y;
+	
+	result=gcd(x,y)
+
+	cout>>"xGCD of" <<n<<"and" <<y<<"is"<<result;
+
+	return 0;
+}
